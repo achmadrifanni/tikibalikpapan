@@ -182,6 +182,49 @@ section {
   color: var(--text-gray);
 }
 
+/* PRODUCT */
+.product__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product__text {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+}
+
+.product__city {
+  font-size: 0.7rem;
+  color: var(--text-gray);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: start;
+
+  & svg {
+    color: var(--primary-900);
+    width: 15px;
+    height: 15px;
+  }
+}
+
 /* LOCATION */
 .location-card {
   padding-block: 1rem;
