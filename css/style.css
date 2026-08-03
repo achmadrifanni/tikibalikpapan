@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-900: #0433ab;
+  --white-50: #f4f5f7;
+  --header-height: 60px;
+  --text-gray: #374151;
+}
+
+body {
+  padding-top: var(--header-height);
+  font-family: "Roboto Condensed", sans-serif;
+  height: 1000vh;
+}
+
+/* GLOBAL */
+section {
+  padding-block: 2rem;
+}
+
+.section__title {
+  color: var(--white-50);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  background-color: var(--primary-900);
+  width: fit-content;
+  padding: 0.2rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section__subtitle {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--primary-900);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  height: var(--header-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.navbar {
+  display: none;
+  background-color: var(--white-50);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: calc(100vh - var(--header-height));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-900);
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: var(--white-50);
+  text-decoration: none;
+
+  &.btn--cta {
+    background-color: var(--primary-900);
+    padding: 0.5rem 1rem;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  &.btn--outline {
+    color: var(--primary-900);
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+
+  &.btn--outline::before,
+  &.btn--outline::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    z-index: -1;
+  }
+
+  &.btn--outline::before {
+    background-color: var(--primary-900);
+    inset: 0;
+  }
+  &.btn--outline::after {
+    background-color: var(--white-50);
+    inset: 2px;
+  }
+}
+
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  & a {
+    width: 150px;
+  }
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: var(--primary-900);
+}
+
+/* ABOUT */
+.about__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: skewX(-10deg);
+}
+
+.about__item:nth-child(1),
+.about__item:nth-child(2) {
+  transform: translateX(10px) skewX(-10deg);
+}
+.about__item:nth-child(3),
+.about__item:nth-child(4) {
+  transform: translateX(-10px) skewX(-10deg);
+}
+
+.about__text {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+/* LOCATION */
+.location-card {
+  padding-block: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.location-card__header h3 {
+  text-align: start;
+}
+
+.location-card__images {
+  position: relative;
+}
+
+.location-card__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.location-card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background-color: var(--primary-900);
+  color: var(--white-50);
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+
+  & span {
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}
+
+.location-card__maps {
+  background-color: var(--primary-900);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  & a {
+    color: var(--white-50);
+  }
+}
+
+.location-card__footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
