@@ -172,27 +172,6 @@
                 />
                 <h3 class="product__title">Same Day Service</h3>
                 <p class="product__text">Kiriman tiba di hari yang sama</p>
-                <div class="product__city">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-map-pin-check-icon lucide-map-pin-check"
-                  >
-                    <path
-                      d="M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                    <path d="m16 18 2 2 4-4" />
-                  </svg>
-                  <p>Jakarta, Surabaya, Samarinda, Balikpapan</p>
-                </div>
               </li>
               <li class="product__item">
                 <img
@@ -201,34 +180,137 @@
                   class="product__img"
                 />
                 <h3 class="product__title">One Night Service</h3>
-                <p class="product__text">Kirim hari ini, esok akan tiba</p>
-                <div class="product__city">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-map-pin-check-icon lucide-map-pin-check"
-                  >
-                    <path
-                      d="M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                    <path d="m16 18 2 2 4-4" />
-                  </svg>
-                  <p>Jabodetabek dan kota besar lainnya</p>
-                </div>
+                <p class="product__text">Kiriman tiba esok hari</p>
               </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li class="product__item">
+                <img
+                  src="assets/img/products/reg.jpeg"
+                  alt="sds"
+                  class="product__img"
+                />
+                <h3 class="product__title">Regular Service</h3>
+                <p class="product__text">Kiriman tiba sekitar 3 hari</p>
+              </li>
+              <li class="product__item">
+                <img
+                  src="assets/img/products/eco.jpeg"
+                  alt="sds"
+                  class="product__img"
+                />
+                <h3 class="product__title">Economy Service</h3>
+                <p class="product__text">Kiriman tiba sekitar 5-6 hari</p>
+              </li>
+              <li class="product__item">
+                <img
+                  src="assets/img/products/trc.jpeg"
+                  alt="sds"
+                  class="product__img"
+                />
+                <h3 class="product__title">Trucking Service</h3>
+                <p class="product__text">Kiriman tiba sekitar 10-14 hari</p>
+              </li>
+              <li class="product__item">
+                <img
+                  src="assets/img/products/int.jpeg"
+                  alt="sds"
+                  class="product__img"
+                />
+                <h3 class="product__title">International Service</h3>
+                <p class="product__text">Kiriman terjangkau keluar negeri</p>
+              </li>
             </ul>
+            <button class="btn btn--product" id="termBtnOpen">
+              Syarat dan ketentuan
+            </button>
+            <dialog id="termModal" class="term-modal">
+              <p>
+                Berikut adalah syarat dan ketentuan dari masing-masing produk
+              </p>
+              <ul>
+                <li>
+                  <h4 class="term-modal__title">SDS (Same Day Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">
+                      Diproses maksimal jam 9 pagi
+                    </li>
+                    <li class="term-modal__item">
+                      Hanya untuk kota Jakarta, Surabaya, Samarinda dan
+                      Balikpapan
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="term-modal__title">ONS (One Night Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">
+                      Closing Time pukul 15:00 (setelahnya estimasi +1 hari)
+                    </li>
+                    <li class="term-modal__item">
+                      Hanya untuk daerah Jabodetabek dan kota besar lainnya
+                    </li>
+                    <li class="term-modal__item">
+                      Untuk kota yang transit jika tersedia setidaknya menjadi 2
+                      hari
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="term-modal__title">REG (Regular Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">
+                      Closing Time pukul 15:00 (setelahnya estimasi +1 hari)
+                    </li>
+                    <li class="term-modal__item">
+                      Tersedia untuk semua daerah di Indonesia
+                    </li>
+                    <li class="term-modal__item">
+                      Selain kota besar, berpotensi menjadi 4-5 hari
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="term-modal__title">ECO (Economy Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">
+                      Closing Time pukul 15:00 (setelahnya estimasi +1 hari)
+                    </li>
+                    <li class="term-modal__item">
+                      Tersedia untuk semua daerah di Indonesia
+                    </li>
+                    <li class="term-modal__item">
+                      Selain kota besar, berpotensi menjadi 4-5 hari
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="term-modal__title">TRC (Trucking Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">
+                      Berat minimum pengiriman adalah 10kg
+                    </li>
+                    <li class="term-modal__item">
+                      Jika di bawah itu akan tetap di charge menjadi 10kg
+                    </li>
+                    <li class="term-modal__item">
+                      Jika ke luar pulau, pengiriman via laut
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="term-modal__title">INT (International Service)</h4>
+                  <ul class="term-modal__list">
+                    <li class="term-modal__item">Berat dihitung per 0.5kg</li>
+                    <li class="term-modal__item">
+                      Jika berupa barang wajib menyertakan nota harga barang
+                    </li>
+                    <li class="term-modal__item">Estimasi sekitar 7 hari</li>
+                  </ul>
+                </li>
+              </ul>
+              <button id="termBtnClose" class="btn btn--product btn--close">
+                Close
+              </button>
+            </dialog>
           </div>
         </div>
       </section>
@@ -389,5 +471,7 @@
       </section>
     </main>
     <footer>footer</footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
