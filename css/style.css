@@ -2,9 +2,11 @@
 
 :root {
   --primary-900: #0433ab;
+  --secondary--600: #fb0404;
   --white-50: #f4f5f7;
   --header-height: 60px;
   --text-gray: #374151;
+  --jajar-genjang: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 body {
@@ -20,16 +22,16 @@ section {
 
 .section__title {
   color: var(--white-50);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: var(--jajar-genjang);
   background-color: var(--primary-900);
   width: fit-content;
-  padding: 0.2rem 1.5rem;
+  padding: 0.25rem 1.5rem;
   margin-bottom: 1rem;
 }
 
 .section__subtitle {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   margin-bottom: 1rem;
 }
 
@@ -91,24 +93,40 @@ section {
   place-items: center;
   color: var(--white-50);
   text-decoration: none;
+  clip-path: var(--jajar-genjang);
 
-  &.btn--cta {
+  &.btn__modal {
+    float: right;
+  }
+
+  &.btn--large {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  &.btn--small {
+    padding: 0.25rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  &.btn--primary {
     background-color: var(--primary-900);
-    padding: 0.5rem 1rem;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  &.btn--secondary {
+    background-color: var(--secondary--600);
   }
 
   &.btn--outline {
-    color: var(--primary-900);
-    padding: 0.5rem 1rem;
     position: relative;
+    color: var(--primary-900);
   }
 
   &.btn--outline::before,
   &.btn--outline::after {
     content: "";
     position: absolute;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: var(--jajar-genjang);
     z-index: -1;
   }
 
@@ -119,19 +137,6 @@ section {
   &.btn--outline::after {
     background-color: var(--white-50);
     inset: 2px;
-  }
-
-  &.btn--product {
-    background-color: var(--primary-900);
-    padding: 0.2rem 1.3rem;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-
-  &.btn--close {
-    float: right;
-    cursor: pointer;
   }
 }
 
@@ -147,7 +152,7 @@ section {
 }
 
 /* HERO */
-.hero h1 {
+.hero__title {
   font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
@@ -181,12 +186,10 @@ section {
   transform: skewX(-10deg);
 }
 
-.about__item:nth-child(1),
-.about__item:nth-child(2) {
+.about__item:nth-child(-n + 2) {
   transform: translateX(10px) skewX(-10deg);
 }
-.about__item:nth-child(3),
-.about__item:nth-child(4) {
+.about__item:nth-last-child(-n + 2) {
   transform: translateX(-10px) skewX(-10deg);
 }
 
@@ -280,7 +283,6 @@ section {
 .stat__list {
   display: flex;
   justify-content: center;
-  /* gap: 1rem; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
