@@ -453,10 +453,11 @@ section {
 
 .banner__subtitle {
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+  font-size: 1.275rem;
+  margin-top: 2rem;
   color: var(--text-gray);
 }
+
 .sosmed__list {
   display: flex;
   justify-content: center;
@@ -486,11 +487,31 @@ section {
 
 /* FOOTER */
 .footer {
-  padding: 1rem;
+  padding-block: 2rem;
   background-color: var(--primary-900);
   color: var(--white-50);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+
+  & address {
+    text-align: start;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--white-50);
+}
+
+.footer__copy {
   text-align: center;
+  margin-top: 2rem;
 }
 
 @keyframes marquee {
