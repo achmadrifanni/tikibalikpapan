@@ -45,7 +45,7 @@ section {
 
 /* HEADER */
 .header {
-  background-color: var(--primary-900);
+  background-color: white;
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -56,6 +56,10 @@ section {
   align-items: center;
   box-shadow: var(--shadow);
   z-index: 999;
+}
+
+.header__logo {
+  width: 130px;
 }
 
 .navbar {
@@ -141,10 +145,37 @@ section {
   }
 }
 
-.hero__cta {
+/* HERO */
+.hero__content {
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  color: var(--primary-900);
+  /* letter-spacing: 1px; */
+  font-weight: bold;
+}
+
+.hero__subtitle {
+  color: var(--text-gray);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.hero__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 
   & a {
@@ -152,13 +183,28 @@ section {
   }
 }
 
-/* HERO */
-.hero__title {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: 500;
-  color: var(--primary-900);
+.hero__image {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.hero__img {
+  width: 100%;
+  display: block;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 94%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 15%,
+    black 94%,
+    transparent 100%
+  );
 }
 
 /* ABOUT */
@@ -445,6 +491,8 @@ section {
 /* BANNER */
 .banner__title {
   text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 
   & span {
     color: var(--primary-900);

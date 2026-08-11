@@ -13,7 +13,9 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">LOGO</a>
+      <a href="#">
+        <img src="assets/img/logo.png" alt="header logo" class="header__logo" />
+      </a>
       <nav class="navbar">
         <ul class="nav-list">
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
@@ -21,7 +23,7 @@
           <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <button class="btn menu-toggle" aria-label="Toggle menu">
+      <button class="btn btn--primary menu-toggle" aria-label="Toggle menu">
         <span class="material-symbols-outlined"> menu </span>
       </button>
     </header>
@@ -29,11 +31,23 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <h1 class="hero__title">Solusi Pengiriman Tepercaya</h1>
-        <img src="assets/img/hero.png" alt="logo tiki balikpapan" />
-        <div class="hero__cta">
-          <a href="#" class="btn btn--large btn--primary">Get Started</a>
-          <a href="#" class="btn btn--large btn--outline">Whats App</a>
+        <div class="hero__content">
+          <h1 class="hero__title">Kirim Lebih Cepat, Sampai Lebih Aman</h1>
+          <p class="hero__subtitle">
+            Solusi pengiriman tepercaya untuk kebutuhan personal dan bisnis di
+            seluruh Indonesia
+          </p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--large btn--primary">Get Started</a>
+            <a href="#" class="btn btn--large btn--outline">Whats App</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img
+            src="assets/img/hero.png"
+            alt="hero tiki balikpapan"
+            class="hero__img"
+          />
         </div>
       </section>
 
@@ -617,8 +631,11 @@
         <div class="container">
           <div class="banner__content">
             <h2 class="banner__title">
-              Kami membantu pengiriman barang ke seluruh Indonesia dengan
-              <span>cepat, aman, dan profesional.</span>
+              Siap mengirim? Kami Siap Mengantarkan
+              <span
+                >Solusi Pengiriman Cepat, Aman dan Tepercaya ke Seluruh
+                Indonesia</span
+              >
             </h2>
             <h3 class="banner__subtitle">Follow Us</h3>
             <ul class="sosmed__list">
