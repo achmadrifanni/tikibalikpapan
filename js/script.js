@@ -18,6 +18,20 @@ document.addEventListener("click", (event) => {
   }
 });
 
+// Select the header element
+const header = document.querySelector(".header");
+
+// Listen for the scroll event
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    // Add the shadow class if scrolled down
+    header.classList.add("header-scrolled");
+  } else {
+    // Remove the shadow class if at the very top
+    header.classList.remove("header-scrolled");
+  }
+});
+
 // product modal
 const termModal = document.getElementById("termModal");
 const termBtnOpen = document.getElementById("termBtnOpen");
