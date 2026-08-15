@@ -301,14 +301,14 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* LAYANAN */
-.layanan__list {
+/* SERVICES */
+.service__list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.layanan__item {
+.service__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -317,18 +317,18 @@ section {
   box-shadow: var(--shadow);
 }
 
-.layanan__img {
+.service__img {
   width: 80px;
 }
 
-.layanan__wrapper {
+.service__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
 
-.layanan__title {
+.service__title {
   color: var(--white-50);
   background-color: var(--secondary--600);
   padding: 0.25rem 1rem;
@@ -337,19 +337,19 @@ section {
   clip-path: var(--jajar-genjang);
 }
 
-.layanan__text {
+.service__text {
   color: var(--text-gray);
   font-size: 0.75rem;
 }
 
-/* KEMITRAAN */
-.kemitraan__content {
+/* PARTNERSHIP */
+.partner__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.kemitraan-card {
+.partner-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,7 +358,7 @@ section {
   box-shadow: var(--shadow);
 }
 
-.kemitraan-card__img {
+.partner-card__img {
   width: 100%;
   aspect-ratio: 1/1;
 }
@@ -404,19 +404,19 @@ section {
   }
 }
 
-/* PARTNERS */
-.partners__slider {
+/* CLIENTS */
+.clients__slider {
   overflow: hidden;
 }
 
-.partners__track {
+.clients__track {
   display: flex;
   gap: 1rem;
   width: max-content;
   animation: marquee 25s linear infinite;
 }
 
-.partners__track img {
+.clients__track img {
   filter: grayscale(100%);
   opacity: 0.6;
   transition: 0.3s;
