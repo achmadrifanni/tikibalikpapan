@@ -13,19 +13,27 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="#about">
         <img src="assets/img/logo.png" alt="header logo" class="header__logo" />
       </a>
       <nav class="navbar">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Partnership</a>
+            <a href="#about" class="nav__link">About</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Locations</a></li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#partner" class="nav__link">Partnership</a>
+          </li>
+          <li class="nav__item">
+            <a href="#locations" class="nav__link">Locations</a>
+          </li>
         </ul>
       </nav>
       <button class="btn btn--primary nav__toggle" aria-label="Toggle menu">
@@ -35,7 +43,7 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__content">
           <h1 class="hero__title">Kirim Lebih Cepat, Sampai Lebih Aman</h1>
           <p class="hero__subtitle">
@@ -43,8 +51,14 @@
             seluruh Indonesia
           </p>
           <div class="hero__cta">
-            <a href="#" class="btn btn--large btn--primary">Kirim Paket</a>
-            <a href="#" class="btn btn--large btn--outline">Whats App</a>
+            <a href="#banner" class="btn btn--large btn--primary"
+              >Kirim Paket</a
+            >
+            <a
+              href="https://wa.me/6281347840212?text=Hallo%20tiki%20balikpapan"
+              class="btn btn--large btn--outline"
+              >Whats App</a
+            >
           </div>
         </div>
         <div class="hero__image">
@@ -57,7 +71,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">About</h2>
@@ -172,7 +186,7 @@
       </section>
 
       <!-- PRODUCT -->
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Product</h2>
@@ -353,7 +367,7 @@
       </section>
 
       <!-- SERVICES -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Services</h2>
@@ -421,7 +435,7 @@
       </section>
 
       <!-- PARTNERSHIP -->
-      <section class="partner">
+      <section class="partner" id="partner">
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Partnership</h2>
@@ -497,7 +511,7 @@
       </section>
 
       <!-- LOCATIONs -->
-      <section class="locations">
+      <section class="locations" id="locations">
         <div class="container">
           <header class="section__header">
             <h2 class="section__title">Offices</h2>
@@ -652,7 +666,7 @@
       </section>
 
       <!-- BANNER -->
-      <section class="banner">
+      <section class="banner" id="banner">
         <div class="container">
           <div class="banner__content">
             <h2 class="banner__title">

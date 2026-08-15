@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-900: #0433ab;
-  --secondary--600: #fb0404;
-  --white-50: #f4f5f7;
+  /* brand */
+  --color-primary: #0433ab;
+  --color-secondary: #fb0404;
+
+  /* background */
+  --color-background: #fff;
+  --color-surface: #f4f5f7;
+
+  /* text */
+  --color-text-primary: #0433ab;
+  --color-text-body: #111827;
+  --color-text-inverse: #fff;
+  --color-text-tertiary: #374151;
+
+  /* ui */
   --header-height: 60px;
-  --text-gray: #374151;
   --jajar-genjang: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -13,7 +24,8 @@
 body {
   padding-top: var(--header-height);
   font-family: "Roboto Condensed", sans-serif;
-  /* height: 1000vh; */
+  color: var(--color-text-body);
+  background-color: var(--color-background);
 }
 
 /* GLOBAL */
@@ -22,9 +34,9 @@ section {
 }
 
 .section__title {
-  color: var(--white-50);
+  color: var(--color-text-inverse);
   clip-path: var(--jajar-genjang);
-  background-color: var(--primary-900);
+  background-color: var(--color-primary);
   width: fit-content;
   padding: 0.25rem 1.5rem;
   margin-bottom: 1rem;
@@ -49,7 +61,7 @@ section {
   cursor: pointer;
   display: grid;
   place-items: center;
-  color: var(--white-50);
+  color: var(--color-text-inverse);
   text-decoration: none;
   clip-path: var(--jajar-genjang);
 
@@ -68,16 +80,16 @@ section {
   }
 
   &.btn--primary {
-    background-color: var(--primary-900);
+    background-color: var(--color-primary);
   }
 
   &.btn--secondary {
-    background-color: var(--secondary--600);
+    background-color: var(--color-secondary);
   }
 
   &.btn--outline {
     position: relative;
-    color: var(--primary-900);
+    color: var(--color-primary);
   }
 
   &.btn--outline::before,
@@ -89,18 +101,18 @@ section {
   }
 
   &.btn--outline::before {
-    background-color: var(--primary-900);
+    background-color: var(--color-primary);
     inset: 0;
   }
   &.btn--outline::after {
-    background-color: var(--white-50);
+    background-color: var(--color-surface);
     inset: 2px;
   }
 }
 
 /* HEADER */
 .header {
-  background-color: white;
+  background-color: var(--color-background);
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -118,7 +130,7 @@ section {
 }
 
 .navbar {
-  background-color: white;
+  background-color: var(--color-background);
   position: fixed;
   top: var(--header-height);
   left: 0;
@@ -147,7 +159,7 @@ section {
 
 .nav__link {
   text-decoration: none;
-  color: var(--primary-900);
+  color: var(--color-primary);
 }
 
 /* HERO */
@@ -165,13 +177,13 @@ section {
   font-size: 2.5rem;
   margin-top: 3rem;
   font-weight: 500;
-  color: var(--primary-900);
+  color: var(--color-primary);
   /* letter-spacing: 1px; */
   font-weight: bold;
 }
 
 .hero__subtitle {
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
   font-size: 1.25rem;
   letter-spacing: 1px;
   line-height: 1.25;
@@ -228,6 +240,7 @@ section {
 }
 
 .about__item {
+  background-color: var(--color-surface);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,7 +260,7 @@ section {
 
 .about__text {
   font-size: 0.9rem;
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
 }
 
 /* PRODUCT */
@@ -281,13 +294,13 @@ section {
 
 .product__text {
   font-size: 0.75rem;
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
 }
 
 .term-modal {
   font-size: 0.875rem;
   /* margin-top: 1rem; */
-  border: 2px solid var(--primary-900);
+  border: 2px solid var(--color-primary);
 
   p {
     margin-bottom: 0.5rem;
@@ -334,8 +347,8 @@ section {
 }
 
 .service__title {
-  color: var(--white-50);
-  background-color: var(--secondary--600);
+  color: var(--color-text-inverse);
+  background-color: var(--color-secondary);
   padding: 0.25rem 1rem;
   letter-spacing: 1px;
   font-size: 0.875rem;
@@ -343,7 +356,7 @@ section {
 }
 
 .service__text {
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
   font-size: 0.75rem;
 }
 
@@ -355,6 +368,7 @@ section {
 }
 
 .partner-card {
+  background-color: var(--color-surface);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,7 +396,7 @@ section {
   padding: 0.5rem;
   flex: 1;
   text-align: center;
-  background-color: var(--primary-900);
+  background-color: var(--color-primary);
   position: relative;
 
   &:not(:last-child):after {
@@ -393,19 +407,19 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    border-right: 1px solid var(--white-50);
+    border-right: 1px solid var(--color-surface);
   }
 
   & strong {
     font-size: 2rem;
-    color: var(--white-50);
+    color: var(--color-text-inverse);
   }
 
   & h4 {
     font-size: 0.875rem;
     font-style: italic;
     letter-spacing: 1px;
-    color: var(--white-50);
+    color: var(--color-text-inverse);
   }
 }
 
@@ -460,8 +474,8 @@ section {
   position: absolute;
   top: 1rem;
   left: 0;
-  background-color: var(--primary-900);
-  color: var(--white-50);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
   padding: 0.25rem 1rem;
   font-size: 0.875rem;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
@@ -474,7 +488,7 @@ section {
 }
 
 .location-card__maps {
-  background-color: var(--primary-900);
+  background-color: var(--color-primary);
   border-radius: 50px;
   position: absolute;
   bottom: 8px;
@@ -483,14 +497,14 @@ section {
   cursor: pointer;
 
   & a {
-    color: var(--white-50);
+    color: var(--color-text-inverse);
   }
 }
 
 .location-card__footer p {
   text-align: center;
   font-size: 0.875rem;
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
 }
 
 /* BANNER */
@@ -500,7 +514,7 @@ section {
   letter-spacing: 1px;
 
   & span {
-    color: var(--primary-900);
+    color: var(--color-primary);
   }
 }
 
@@ -508,7 +522,7 @@ section {
   text-align: center;
   font-size: 1.275rem;
   margin-top: 2rem;
-  color: var(--text-gray);
+  color: var(--color-text-tertiary);
 }
 
 .sosmed__list {
@@ -523,7 +537,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: var(--primary-900);
+  background-color: var(--color-primary);
   padding: 0.125rem 1.25rem;
   clip-path: var(--jajar-genjang);
 }
@@ -535,14 +549,14 @@ section {
 .sosmed__link {
   text-decoration: none;
   font-size: 0.875rem;
-  color: var(--white-50);
+  color: var(--color-text-inverse);
 }
 
 /* FOOTER */
 .footer {
   padding-block: 2rem;
-  background-color: var(--primary-900);
-  color: var(--white-50);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
   font-size: 0.75rem;
 }
 
@@ -559,7 +573,7 @@ section {
 
 .footer__link {
   text-decoration: none;
-  color: var(--white-50);
+  color: var(--color-text-inverse);
 }
 
 .footer__copy {

@@ -1,10 +1,10 @@
+// navbar
 const navToggle = document.querySelector(".nav__toggle");
 const navbar = document.querySelector(".navbar");
 
 navToggle.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
-
 const closeMenu = () => {
   navbar.classList.remove("active");
 };
@@ -18,6 +18,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
+// product modal
 const termModal = document.getElementById("termModal");
 const termBtnOpen = document.getElementById("termBtnOpen");
 const termBtnClose = document.getElementById("termBtnClose");
