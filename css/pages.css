@@ -50,7 +50,20 @@ article {
   }
 }
 
-.gerai__contact {
+.perusahaan__wrapper {
+  margin-block: 1rem;
+}
+
+.perusahaan__images {
+  display: flex;
+  flex-direction: column;
+}
+
+.perusahaan__logo {
+  display: inline;
+}
+
+.pic__contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,5 +76,18 @@ article {
 
   & svg {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .perusahaan__images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pic__wrapper {
+    display: flex;
+    gap: 2rem;
   }
 }
