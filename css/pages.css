@@ -1,0 +1,67 @@
+@import url("../css/style.css");
+
+article {
+  padding-block: 2rem;
+}
+.gerai__wrapper {
+  width: 100%;
+  margin-block: 1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--color-background);
+}
+
+.gerai__table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.gerai__table th {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.gerai__table td {
+  padding: 1rem;
+  color: var(--color-text-body);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.gerai__table tbody tr:nth-child(even) {
+  background-color: var(--color-primary-light);
+}
+
+.gerai__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.gerai__table tbody tr:hover {
+  background-color: var(--color-primary);
+
+  & td {
+    color: var(--color-text-inverse);
+  }
+}
+
+.gerai__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-block: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow);
+  letter-spacing: 1px;
+
+  & svg {
+    margin-bottom: 0.5rem;
+  }
+}
