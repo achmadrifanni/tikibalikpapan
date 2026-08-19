@@ -50,3 +50,5 @@ window.addEventListener("click", (event) => {
     termModal.close();
   }
 });
+
+const statNumber = document.querySelectorAll("[data-target]");
