@@ -51,6 +51,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// stat counter
 const statNumbers = document.querySelectorAll("[data-target]");
 
 const animateCounter = (element) => {
@@ -94,3 +95,6 @@ const observer = new IntersectionObserver(
 const statsSection = document.querySelector(".partner");
 
 observer.observe(statsSection);
+
+const picWrapper = document.querySelector(".pic__wrapper");
+console.log(picWrapper);
