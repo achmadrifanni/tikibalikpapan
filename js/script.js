@@ -51,4 +51,46 @@ window.addEventListener("click", (event) => {
   }
 });
 
-const statNumber = document.querySelectorAll("[data-target]");
+const statNumbers = document.querySelectorAll("[data-target]");
+
+const animateCounter = (element) => {
+  const target = Number(element.dataset.target);
+  const duration = 1500;
+  const startTime = performance.now();
+
+  const updateCounter = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    const currentValue = Math.floor(progress * target);
+
+    element.textContent = currentValue.toLocaleString("id-ID");
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target.toLocaleString("id-ID") + "+";
+    }
+  };
+
+  requestAnimationFrame(updateCounter);
+};
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        statNumbers.forEach(animateCounter);
+
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  },
+);
+
+const statsSection = document.querySelector(".partner");
+
+observer.observe(statsSection);
