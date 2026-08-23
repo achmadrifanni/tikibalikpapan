@@ -1,5 +1,5 @@
 // table
-const data = [
+export const data = [
   {
     gerai: "004",
     name: "Sepinggan Foto",
@@ -73,7 +73,7 @@ const data = [
   {
     gerai: "081",
     name: "Manunggal",
-    address: "Jl. Manungal RT. 42 No.0",
+    address: "Jl. Manunggal RT. 42 No. 0",
   },
   {
     gerai: "083",
@@ -112,8 +112,8 @@ const data = [
   },
   {
     gerai: "105",
-    name: "Strat 1 Gn Samarinda",
-    address: "Jl. D. I. Panjaitan RT. 6 No. 11A",
+    name: "Strat 1 Gn. Samarinda",
+    address: "Jl. D. I. Panjaitan RT. 06 No. 11A",
   },
   {
     gerai: "108",
@@ -152,8 +152,8 @@ const data = [
   },
   {
     gerai: "125",
-    name: "FT Cahaya Watampone KM 8",
-    address: "Jl. Soekarno Hatta KM 8",
+    name: "FT Cahaya Watampone Km. 8",
+    address: "Jl. Soekarno Hatta Km. 8",
   },
   {
     gerai: "128",
@@ -162,13 +162,13 @@ const data = [
   },
   {
     gerai: "129",
-    name: "Perum Polda KM 7 - Putri Olshop",
+    name: "Perum Polda Km. 7 - Putri Olshop",
     address: "Perum Griya Prima Lestari Blok Q2 RT. 50",
   },
   {
     gerai: "130",
     name: "Lamaru - Anny Cell",
-    address: "Jl. Mulawarman RT. 12 No.43",
+    address: "Jl. Mulawarman RT. 12 No. 43",
   },
   {
     gerai: "132",
@@ -183,12 +183,12 @@ const data = [
   {
     gerai: "134",
     name: "Batu Ampar - Pasar Batu Ampar",
-    address: "Jl. Pattimura RT. 28 No.2",
+    address: "Jl. Pattimura RT. 28 No. 02",
   },
   {
     gerai: "136",
     name: "PT. Her 2",
-    address: "Perum PT. Her 2 Jl. Mangga RT. 58 No. 4",
+    address: "Perum PT. Her 2 Jl. Mangga RT. 58 No. 04",
   },
   {
     gerai: "139",
@@ -198,7 +198,7 @@ const data = [
   {
     gerai: "142",
     name: "Perum Bumi Rengganis",
-    address: "Komp. Bumi Rengganis Blok C No. 7",
+    address: "Komp. Bumi Rengganis Blok C No. 07",
   },
   {
     gerai: "143",
