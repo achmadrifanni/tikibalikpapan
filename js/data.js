@@ -128,11 +128,81 @@ const data = [
   {
     gerai: "116",
     name: "Fotocopy Khadijah",
-    address: "JL KLAMONO RT. 47 No. 34",
+    address: "Jl. Klamono RT. 47 No. 34",
   },
   {
-    gerai: "",
-    name: "",
-    address: "",
+    gerai: "118",
+    name: "Perum Batuah - Dira Store",
+    address: "Jl. Taman Sari - Perum Pesona Bukit Batuah Blok CH 06 RT. 071",
+  },
+  {
+    gerai: "121",
+    name: "Kampung Baru Ulu - Holla Store",
+    address: "Jl. Wolter Monginsidi RT. 32 No. 61",
+  },
+  {
+    gerai: "122",
+    name: "Nurhidaya Tour & Travel",
+    address: "Jl. Mulawarman RT. 46 No. 50",
+  },
+  {
+    gerai: "123",
+    name: "Gunung Polisi",
+    address: "Jl. Arjuna 1 Gn. Polisi RT. 55 No. 10",
+  },
+  {
+    gerai: "125",
+    name: "FT Cahaya Watampone KM 8",
+    address: "Jl. Soekarno Hatta KM 8",
+  },
+  {
+    gerai: "128",
+    name: "F and X Shop",
+    address: "Balikpapan Baru Blok Beverly Hills CF7",
+  },
+  {
+    gerai: "129",
+    name: "Perum Polda KM 7 - Putri Olshop",
+    address: "Perum Griya Prima Lestari Blok Q2 RT. 50",
+  },
+  {
+    gerai: "130",
+    name: "Lamaru - Anny Cell",
+    address: "Jl. Mulawarman RT. 12 No.43",
+  },
+  {
+    gerai: "132",
+    name: "Batakan Permai 1",
+    address: "Perum Bukit Batakan Permai Blok B4/13 Manggar",
+  },
+  {
+    gerai: "133",
+    name: "Kariangau - CV Alam Samudera",
+    address: "Jl. Sultan Hasanuddin RT. 07",
+  },
+  {
+    gerai: "134",
+    name: "Batu Ampar - Pasar Batu Ampar",
+    address: "Jl. Pattimura RT. 28 No.2",
+  },
+  {
+    gerai: "136",
+    name: "PT. Her 2",
+    address: "Perum PT. Her 2 Jl. Mangga RT. 58 No. 4",
+  },
+  {
+    gerai: "139",
+    name: "Sepinggan - Brilink Yulianah",
+    address: "Jl. SMA Negeri 4 RT. 46",
+  },
+  {
+    gerai: "142",
+    name: "Perum Bumi Rengganis",
+    address: "Komp. Bumi Rengganis Blok C No. 7",
+  },
+  {
+    gerai: "143",
+    name: "Mini Petshop",
+    address: "Jl. Merah Delima VII No. 24",
   },
 ];
