@@ -624,6 +624,10 @@ section {
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
+  .container {
+    padding-inline: 6rem;
+  }
+
   .header {
     padding-block: 1rem;
     padding-inline: 7rem;
