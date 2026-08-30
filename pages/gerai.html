@@ -13,37 +13,55 @@
     />
   </head>
   <body>
-    <header class="header">
-      <a href="../index.html#hero">
-        <img
-          src="../assets/img/logo.png"
-          alt="header logo"
-          class="header__logo"
-        />
-      </a>
+    <!-- HEADER -->
+    <header class="header" id="header">
       <nav class="navbar">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="../index.html#about" class="nav__link">About</a>
+        <a href="../#hero">
+          <img
+            src="../assets/img/logo.png"
+            alt="navbar logo"
+            class="navbar__logo"
+          />
+        </a>
+        <ul class="navbar__list" id="navbarList">
+          <li class="navbar__item">
+            <a href="../#about" class="navbar__link">About</a>
           </li>
-          <li class="nav__item">
-            <a href="../index.html#products" class="nav__link">Products</a>
+          <li class="navbar__item">
+            <a href="../#products" class="navbar__link">Products</a>
           </li>
-          <li class="nav__item">
-            <a href="../index.html#services" class="nav__link">Services</a>
+          <li class="navbar__item">
+            <a href="../#services" class="navbar__link">Services</a>
           </li>
-          <li class="nav__item">
-            <a href="../index.html#partner" class="nav__link">Partnership</a>
+          <li class="navbar__item">
+            <a href="../#partner" class="navbar__link">Partnership</a>
           </li>
-          <li class="nav__item">
-            <a href="../index.html#locations" class="nav__link">Locations</a>
+          <li class="navbar__item">
+            <a href="../#locations" class="navbar__link">Locations</a>
           </li>
         </ul>
+        <button class="btn btn--primary" id="navbarToggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
       </nav>
-      <button class="btn btn--primary nav__toggle" aria-label="Toggle menu">
-        <span class="material-symbols-outlined"> menu </span>
-      </button>
     </header>
+
+    <!-- MAIN -->
     <main>
       <article>
         <div class="container">

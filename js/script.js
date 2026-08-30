@@ -1,27 +1,26 @@
-// navbar
-const navToggle = document.querySelector(".nav__toggle");
-const navbar = document.querySelector(".navbar");
+// NAVBAR
+const navbarToggle = document.querySelector("#navbarToggle");
+const navbarList = document.querySelector("#navbarList");
 
-navToggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+navbarToggle.addEventListener("click", () => {
+  navbarList.classList.toggle("active");
 });
 const closeMenu = () => {
-  navbar.classList.remove("active");
+  navbarList.classList.remove("active");
 };
 
 document.addEventListener("click", (event) => {
-  const clickedInsideNav = navbar.contains(event.target);
-  const clickedHamburger = navToggle.contains(event.target);
+  const clickedInsideNav = navbarList.contains(event.target);
+  const clickedHamburger = navbarToggle.contains(event.target);
 
   if (!clickedInsideNav && !clickedHamburger) {
     closeMenu();
   }
 });
 
-// Select the header element
-const header = document.querySelector(".header");
+// SCROOL SHADOW
+const header = document.querySelector("#header");
 
-// Listen for the scroll event
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     // Add the shadow class if scrolled down
@@ -32,7 +31,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// product modal
+// PRODUCT MODAL
 const termModal = document.getElementById("termModal");
 const termBtnOpen = document.getElementById("termBtnOpen");
 const termBtnClose = document.getElementById("termBtnClose");
@@ -51,7 +50,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// stat counter
+// STAT COUNTER
 const statNumbers = document.querySelectorAll("[data-target]");
 
 const animateCounter = (element) => {
@@ -95,6 +94,3 @@ const observer = new IntersectionObserver(
 const statsSection = document.querySelector(".partner");
 
 observer.observe(statsSection);
-
-const picWrapper = document.querySelector(".pic__wrapper");
-console.log(picWrapper);
