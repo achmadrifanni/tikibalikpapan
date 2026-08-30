@@ -650,6 +650,7 @@ section {
   .hero {
     display: flex;
     padding-block: 0;
+    margin-bottom: 4rem;
   }
 
   .hero .container {
