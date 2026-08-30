@@ -3,7 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>TIKI Balikpapan | Layanan Pengiriman Barang</title>
+    <!-- Basic SEO -->
+    <meta
+      name="description"
+      content="TIKI Balikpapan menyediakan layanan pengiriman paket cepat, aman, dan terpercaya."
+    />
+
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta
+      property="og:title"
+      content="TIKI Balikpapan — Solusi Pengiriman Terpercaya"
+    />
+    <meta
+      property="og:description"
+      content="Kirim paket lebih mudah, cepat, dan aman bersama TIKI Balikpapan."
+    />
+    <meta
+      property="og:image"
+      content="https://achmadrifanni.github.io/tikibalikpapan/assets/img/ogimg.png"
+    />
+    <meta
+      property="og:url"
+      content="https://achmadrifanni.github.io/tikibalikpapan/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TIKI Balikpapan" />
+    <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -40,7 +67,10 @@
             <a href="#locations" class="navbar__link">Locations</a>
           </li>
         </ul>
-        <button class="btn btn--primary navbar__toggle" id="navbarToggle">
+        <button
+          class="btn btn__skew btn--primary navbar__toggle"
+          id="navbarToggle"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -78,7 +108,7 @@
               data-aos-duration="1000"
               data-aos-easing="ease-in-cubic"
             >
-              <a href="#banner" class="btn btn--large btn--primary"
+              <a href="#banner" class="btn btn__skew btn--large btn--primary"
                 >Kirim Paket</a
               >
               <a href="#locations" class="btn btn--large btn--outline"
@@ -323,7 +353,7 @@
               </li>
             </ul>
             <button
-              class="btn btn--small btn--primary"
+              class="btn btn__skew btn--small btn--primary"
               id="termBtnOpen"
               data-aos="zoom-in"
               data-aos-easing="ease-out-cubic"
@@ -498,6 +528,7 @@
         </div>
       </section>
 
+      <!-- PARTNER -->
       <section class="partner" id="partner">
         <div class="container">
           <header class="section__header">
@@ -1100,6 +1131,33 @@
       </div>
     </footer>
 
+    <!-- FLOATING VIDEO -->
+    <button class="btn btn__video btn--primary" id="videoBtnOpen">
+      <img src="assets/img/hutlogo.jpg" alt="" class="hutlogo" />
+    </button>
+    <dialog class="video__dialog" id="videoDialog">
+      <video src="assets/video/intro.mp4" controls></video>
+      <button
+        class="btn btn__skew btn--secondary btn__modal"
+        id="videoBtnClose"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x"
+        >
+          <line x1="18" x2="6" y1="6" y2="18" />
+          <line x1="6" x2="18" y1="6" y2="18" />
+        </svg>
+      </button>
+    </dialog>
     <!-- FLOATING WHATSAPP -->
     <div class="whatsapp">
       <a href="https://wa.me/6281347840212?text=Hallo%20tiki%20balikpapan">

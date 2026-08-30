@@ -66,7 +66,23 @@ section {
   background-color: transparent;
   cursor: pointer;
   color: var(--color-text-inverse);
-  clip-path: var(--jajar-genjang);
+
+  &.btn__skew {
+    clip-path: var(--jajar-genjang);
+  }
+
+  &.btn__video {
+    padding: 0;
+    position: fixed;
+    bottom: 6rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid var(--color-primary);
+    display: grid;
+    place-items: center;
+  }
 
   &.btn__modal {
     float: right;
@@ -110,6 +126,14 @@ section {
   &.btn--outline::after {
     background-color: var(--color-surface);
     inset: 2px;
+  }
+
+  &.btn--float {
+    position: fixed;
+    bottom: 6rem;
+    right: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
   }
 }
 
@@ -596,11 +620,18 @@ section {
   margin-top: 2rem;
 }
 
+.video__dialog video {
+  margin-bottom: 1rem;
+}
+.hutlogo {
+  width: 3rem;
+  border-radius: 50%;
+}
 .whatsapp {
   position: fixed;
   width: 3.5rem;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   z-index: 9999;
   background-color: var(--color-primary-light);
   border-radius: 50%;

@@ -94,3 +94,21 @@ const observer = new IntersectionObserver(
 const statsSection = document.querySelector(".partner");
 
 observer.observe(statsSection);
+
+const videoBtnOpen = document.getElementById("videoBtnOpen");
+const videoBtnClose = document.getElementById("videoBtnClose");
+const videoDialog = document.getElementById("videoDialog");
+
+videoBtnOpen.addEventListener("click", () => {
+  videoDialog.showModal();
+});
+
+videoBtnClose.addEventListener("click", () => {
+  videoDialog.close();
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === videoDialog) {
+    videoDialog.close();
+  }
+});
